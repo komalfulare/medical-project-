@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .brand{
+        font-size: 40px;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(5, 129, 182);
+        color: white;
+        position: fixed;
+    }
+
+    .heading{
+        margin-left: 50px;
+        margin-top: -40px;
+    }
+
+    i{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 15px;
+        list-style: none;
+        gap: 35px;
+        background-color: rgb(5, 129, 182);
+        margin-left: 870px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
+    .nav {
+        height: 950px;
+        background-image: url("https://www.bhatiahospital.org/storage/app/public/home_banner/2/image/1503411077revised-bhatia-homebanner-03.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+    }
+
+    #headingmean {
+        font-size: 50px;
+        padding: 80px;
+        padding-bottom: 0;
+        padding-top: 200px;
+        color: white;
+        text-decoration: none;
+    }
+
+    #line {
+        font-size: 30px;
+        margin-left: 90px;
+        line-height: 40px;
+        margin-top: 50px;
+    }
+
+    #button {
+        margin-top: 100px;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 30px;
+        border-color: transparent;
+        background-color: white;
+        justify-content: center;
+        color: rgb(15, 83, 241);
+    }
+
+    #button:hover {
+        background-color: rgb(15, 83, 241);
+        color: white;
+    }
+
+    .h3{
+        height: 100px;
+        width: 100%;
+        font-size: 70px;
+        padding: 10px;
+        color: rgb(8, 110, 227);
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .img1{
+        width: 300px;
+        font-size: 20px;
+     }
+
+    .img2{
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .img3 {
+        width: 300px;
+        font-size: 20px;
+     }
+
+    .img4 {
+        width: 300px;
+        font-size: 20px;
+    }
+
+    #h1 {
+        text-align: center;
+        color: white;
+    }
+
+    .card1 {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 50px;
+
+    }
+
+    .card1>div {
+        border: 1px solid gray;
+        background-color: rgb(12, 95, 130);
+    }
+
+    .card1:hover {
+        box-shadow: 3px 3px 3px 3px black;
+    }
+
+
+    .book1>img {
+        width: 300px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #para {
+        color: white;
+        padding: 20px;
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .mybox {
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        color: white;
+        background-color: rgb(5, 129, 182);
+
+    }
+
+    .mybox img {
+        filter: invert(100%);
+    }
+
+    .mybox:hover {
+        box-shadow: 3px 3px 5px  black;
+    }
+
+
+    #heading1 {
+        height: 700px;
+        padding: 45px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #para1 {
+        height: 500px;
+        width: 800px;
+        font-size: 30px;
+        margin-left: 950px;
+        margin-top: -600px;
+        font-family: 'open Sans', sans-serif;
+        color: rgb(5, 129, 182);
+
+    }
+
+    #buttonabc {
+        margin-top: 100px;
+        font-size: 20px;
+        padding: 18px;
+        border-radius: 15px;
+        border-color: transparent;
+        background-color: rgb(0, 132, 255);
+        justify-content: center;
+        color: white;
+    }
+
+    #buttonabc:hover {
+        background-color: white;
+        color: blue;
+        border: 1px solid gray;
+    }
+
+    .gallery {
+        margin-right: 900px;
+        margin-top: 100px;
+    }
+
+    #doctor {
+        margin-top: 150px;
+    }
+
+    .card4 {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+       
+    }
+    .drgallery{
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        color: black;
+        background-color:  rgb(16, 150, 208);
+        border :1px solid  gray;
+        box-shadow: 3px 3px 3px
+        3px gray;
+      
+    
+    }
+
+    .drgallery:hover{
+     background-color: white;
+     color: rgb(0, 132, 255);
+
+    }
+
+    .img{
+        object-fit: cover;
+        object-position: top;
+        height: 200px;
+        width: 250px;
+        
+    }
+    #drname{
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    #PARA{
+        padding: 15px;
+        font-size: 20px;
+        line-height: 25px;
+
+    }
+    .groupdr{
+        margin-top:100px;
+      width: 500px;
+    }
+    .card5 {
+        height: 450px;
+        width: 650px;
+        border: 2px solid #1c9ade;
+        color: black;
+        object-fit: cover;
+        margin-left: 990px;
+        padding: 20px;
+        margin-top: 100px;
+    
+    }
+    #h{
+        font-size: 50px;
+        color: rgb(73, 169, 229);
+        text-shadow:5px grey;
+        text-align: center;
+     }
+
+     #btn{
+        font-size: 20px;
+        padding: 15px;
+        border: 5px solid black;
+        border-radius: 10px ;
+        border-color: transparent;
+        justify-content: center;
+        color:white;
+        background-color: rgb(16, 150, 208);
+        margin-top: 30px;
+        
+     }
+
+     
+    #btn:hover {
+     border: 1px solid rgb(96, 95, 95);
+     background-color: rgb(73, 169, 229);
+
+    }
+    input{
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+       gap: 200px;
+       font-size: 25px;
+       color:  rgb(16, 150, 208);
+     
+    }
+     
+    ::placeholder{
+        color:rgb(16, 150, 208);
+        border-radius: 2px solid rgb(2, 1, 1);
+      }
+    #mean{
+        margin-top: -450px;
+        margin-left: 300px;
+        color: rgb(0, 123, 255);
+    }
+
+    #mean1{
+        font-size: 50px;
+        list-style: none;
+        padding: 10px;
+    }
+
+    #mean>li{
+        font-size: 30px;
+        color:rgb(16, 150, 208) ;
+        line-height: 50px;
+    }
+
+</style>
+
+<body>
+
+    <nav class=" brand">
+        <i class='bx bx-plus-medical'>
+            <div class="heading">Medicare</div>
+        </i>
+        <div class="list">
+            <li><a href="#nav"> Home</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#doctor">Doctor</a></li>
+            <li><a href="#book">Appointment </a></li>
+           
+        </div>
+    </nav>
+
+
+    <div id="nav" class="nav">
+
+        <div id="headingmean">
+            <h2>YOUR HEALTH <br> IS OUR PRIORITY </h2>
+        </div>
+
+        <div id="line">
+            <P> Best Healthcare For Our Area <br> consectetur adipisicing elit Libero corrupti minus nesciunt,<br> fuga
+                nulla placeat iusto labore repellat quidem aliquam <br> soluta aspernatur voluptatibus Lorem ipsum dolor
+                sit amet,<br> consectetur adipisicing elit. Laboriosam vitaebr recusandae <br> ullam expedita nisi dolor
+                dicta numquam doloremque!</P>
+
+            <button id="button">Read More</button>
+        </div>
+    </div>
+
+    <div class="h3" id="Services"> OUR SERVICES</div>
+
+    <div class="card1">
+        <div class="img1" id="imgid">
+            <div class="book1">
+                <img src="https://clipart-library.com/image_gallery2/Doctor-Symbol-Caduceus-PNG.png" height="200px"
+                    alt="">
+            </div>
+            <div id="h1">
+                <h1> Green Lab</h1>
+            </div>
+            <div id="para">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod ,Lorem ipsum dolor sit amet
+               consectetur adipisicing elit mollitia facilis ullam quod impedit.</p>
+            </div>
+        </div>
+        <div class="img2" id="imgid">
+            <div class="book1">
+                <img src="https://i.tribune.com.pk/media/images/2249100-medss-1592974310/2249100-medss-1592974310.jpg"
+                    alt="">
+            </div>
+            <div id="h1">
+                <h1> General Medicine</h1>
+            </div>
+            <div id="para">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod ,Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+        <div class="img3" id="imgid">
+            <div class="book1">
+                <img
+                    src="https://img.freepik.com/free-photo/stethoscope-isolated-white-surface_181624-11424.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705881600&semt=ais">
+            </div>
+            <div id="h1">
+                <h1>Pharmacy Support</h1>
+            </div>
+            <div id="para">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod ,Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+
+        <div class="img4" id="imgid">
+            <div class="book1">
+                <img src=" https://www.yuvrajudaipurtaxi.com/wp-content/uploads/2020/12/Untitled-design-13.png" alt="">
+            </div>
+            <div id="h1">
+                <h1> EFacilities </h1>
+            </div>
+            <div id="para">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod ,Lorem  ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <img src="https://www.genericartmedicine.com/imagesNew/medicine-cart-banner.jpg" width="100%" height="600px">
+
+        <div class="boxes">
+            <div id="box1" class="mybox">
+                <img src="doctodAA-removebg-preview.png" width="100px" height="100px" alt="">
+                <b>120+</b> <br>
+                Doctors At work
+            </div>
+            <div id="box2" class="mybox">
+                <img src="p-removebg-preview (1).png" width="100px" height="100px">
+                <b>1040+</b> <br> Happy Patients
+            </div>
+
+            <div id="box3" class="mybox">
+                <img src="hospital-bed-icon-removebg-preview.png" width="100px" height="100px">
+                <b>500+</b> <br>Bed Facility
+            </div>
+            <div id="box4" class="mybox">
+                <img src="hospital-removebg-preview.png" width="100px" height="100px">
+                <b>80+</b> <br> Hospital Available
+            </div>
+        </div>
+
+    </div>
+
+    <div class="h3" id="about">ABOUT US</div>
+    <div class="card3">
+
+        <div id="heading1">
+            <h2>We Take Care Of Your <br> Healthy Life </h2>
+            <div class="gallery">
+                <img src="https://www.brookings.edu/wp-content/uploads/2017/05/hospital002.jpg?w=1500" height="600px">
+            </div>
+            <br>
+            <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusantium corrupti unde
+                repudiandae non asperiores voluptatibus, impedit itaque! Architecto qui impedit distinctio, deserunt
+                repellendus voluptatem necessitatibus magnam labore harum voluptatibus? Assumenda libero iste soluta
+                earum, tempore hic rerum tempora, debitis
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo similique corrupti rem vitae suscipit
+                facere dicta numquam dignissimos unde aspernatur quisquam sint, aperiam facilis quam ad eligendi quia
+                voluptate!
+                <br>
+                <button id="buttonabc"> Learn More</button>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="h3" id="doctor">OUR DOCTORS </div>
+    <div class="card4">
+        <div class="drgallery">
+            <img id="img" src="https://www.pngitem.com/pimgs/m/455-4554771_doctor-png-female-doctor-transparent-background-png-download.png "
+                alt="" height="300px" width="300px">
+            <h4 id="drname">John Deo</h4>
+            <p id="PARA"> Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                 Veritatis</p>
+        </div>
+        <div class="drgallery">
+            <img  id="img"src="https://media.istockphoto.com/id/1346711310/photo/portrait-of-smiling-female-doctor-wearing-uniform-standing.jpg?s=612x612&w=0&k=20&c=nPsBL7HwQ7y14HP6J7lcCyKl51X5pPSPGnweXHFzT9o="
+                alt="" height="300px" width="300px">
+            <h4 id="drname">John Deo</h4>
+            <p id="PARA"> Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                Veritatis</p>
+    </div>
+       
+      <div class="drgallery">
+            <img id="img" src="https://www.shutterstock.com/image-photo/medical-concept-indian-beautiful-female-600nw-1635029716.jpg"
+                alt="" height="300px" width="300px">
+            <h4 id="drname">John Deo</h4>
+            <p id="PARA"> Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                Veritatis</p>
+        </div>
+        <div class="drgallery">
+                <img id="img" src="https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?size=626&ext=jpg&ga=GA1.1.250479037.1700714261&semt=sph"
+                    alt="" height="300px" width="300px">
+                <h4 id="drname">John Deo</h4>
+                <p id="PARA"> Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                    Veritatis</p>
+        </div>
+    </div>
+    <div class="groupdr">
+        
+    </div>
+
+     <div class="h3" id="book"> book Appointment</div>
+    <div class="card5">
+    <form>
+        <h2 id="h"> Book Appointment</h2>
+        <input type="your name" placeholder="your name">
+        <br>
+        <input type=" your number" placeholder=" your number">
+        <br>
+        <input type=" your email" placeholder=" your email">
+        <br>
+        <input type="date" placeholder="date">
+        <br>
+        <button id="btn">Submit</button>
+     </form>
+    </div>
+
+
+    <div id="mean">
+        <ul id="mean1"> Contact Info </ul>
+        <li><i class='bx bxs-phone-call'> </i>+123-467-5645</li>
+        <li><i class='bx bxs-phone-call'></i></i>+111-222-3333</li>
+        <li><i class='bx bxs-envelope'></i>smartpacey@gmail.com</li>
+        <li><i class='bx bxs-envelope'></i>dipak@gmail.com</li>
+        <li><i class='bx bxs-edit-location' ></i> Mumbai,India-400104</li>
+    </div>
+
+    </div>
+</body>
+
+</html>
